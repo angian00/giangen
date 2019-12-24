@@ -1,0 +1,2 @@
+In this directory all the out images will be created.
+Do not delete it.
