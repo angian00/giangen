@@ -2,7 +2,6 @@
 
 - write down requirements
 - design plug-in architecture
-- list online resources
 
 
 ## MILESTONES
