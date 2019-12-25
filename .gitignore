@@ -1,3 +1,5 @@
 Pipfile.lock
 
 output/*.png
+
+.DS_Store
