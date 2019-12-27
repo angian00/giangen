@@ -3,3 +3,7 @@ Pipfile.lock
 output/*.png
 
 .DS_Store
+
+*.egg-info
+
+__pycache__

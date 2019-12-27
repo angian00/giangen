@@ -13,8 +13,8 @@ Uses [Pillow](https://pillow.readthedocs.io/en/3.0.x/handbook/tutorial.html) ima
 ### Instructions
 - git clone https://github.com/angian00/giangen
 - cd giangen
-- pipenv install
-- pipenv run ./giangen.py
+- pipenv install '-e ./src/'
+- pipenv run python -m giangen
 
 
 
