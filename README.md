@@ -5,20 +5,21 @@ A dungeon generator written in Python.
 Uses [Pillow](https://pillow.readthedocs.io/en/3.0.x/handbook/tutorial.html) image manipulation library.
 
 
-## Installation instructions
+## Instructions
 
 ### Prerequisites
 - Python 3
 - pipenv
 
-### Instructions
+### Installation
 `> git clone https://github.com/angian00/giangen`
 
 `> cd giangen`
 
 `> pipenv install '-e ./src/'`
 
-`> pipenv run python -m giangen`
+### Execution
+`> ./run.sh`
 
 
 
