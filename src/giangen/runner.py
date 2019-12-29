@@ -4,7 +4,7 @@
 from giangen.dungeon_map import *
 
 #from giangen.generators.single_fixed import generate_dungeon
-from giangen.generators.tcod import generate_dungeon
+from giangen.generators.basic import generate_dungeon
 
 
 ###### params ######
