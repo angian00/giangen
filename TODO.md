@@ -3,7 +3,7 @@
 
 ### v0.4
 - algorithms:
-	~ cellular automata
+	- cellular automata: flood fill
 	- jamie's algorithm
 
 - experimenting with maps decorations:

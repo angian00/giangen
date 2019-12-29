@@ -6,16 +6,18 @@ from time import time
 from giangen.dungeon_map import *
 
 #from giangen.generators.single_fixed import generate_dungeon
-#from giangen.generators.basic import generate_dungeon
-from giangen.generators.cell_automa import generate_dungeon
+from giangen.generators.basic import generate_dungeon
+#from giangen.generators.cell_automa import generate_dungeon
 
 
 ###### params ######
 img_path = "./output/dungeon_00.png"
-#map_w = 48
-#map_h = 36
-map_w = 96
-map_h = 72
+map_w = 48
+map_h = 36
+#map_w = 96
+#map_h = 72
+#map_w = 60
+#map_h = 60
 
 ####################
 
