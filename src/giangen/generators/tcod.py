@@ -33,7 +33,7 @@ def generate_dungeon(d_map):
 				break
 
 		if not failed:
-			print(new_room)
+			#print(new_room)
 			create_room(tiles, new_room)
 
 			curr_center = get_room_center(new_room)
