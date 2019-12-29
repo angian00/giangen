@@ -2,9 +2,12 @@
 ## MILESTONES
 
 ### v0.4
-- further research on map styles
+- algorithms:
+	~ cellular automata
+	- jamie's algorithm
 
 - experimenting with maps decorations:
 	- tile lines
 	- wall borders
+	- painting background images
 

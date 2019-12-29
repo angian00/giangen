@@ -11,17 +11,25 @@ class TileType(Enum):
 	ROOM      = 1
 	CORRIDOR  = 2
 
+	# def __str__(self):
+	# 	if self == TileType.WALL:
+	# 		return "W"
+	# 	elif self == TileType.ROOM:
+	# 		return "R"
+	# 	elif self == TileType.CORRIDOR:
+	# 		return "C"
+	# 	else:
+	# 		return "?"
+
 	def __str__(self):
 		if self == TileType.WALL:
-			return "W"
+			return "#"
 		elif self == TileType.ROOM:
-			return "R"
+			return "."
 		elif self == TileType.CORRIDOR:
-			return "C"
+			return "."
 		else:
 			return "?"
-
-
 #--------------------
 
 tile_size = 40
@@ -43,9 +51,9 @@ class DungeonMap:
 
 
 	def __str__(self):
-		res = "DungeonMap ({}x{})".format(self.w, self.h)
+		res = "DungeonMap ({}x{}) \n".format(self.w, self.h)
 		for x in range(self.w):
-			res = res + "[{}] ".format(x)
+			#res = res + "[{}] ".format(x)
 			for y in range(self.h):
 				res = res + "{} ".format(self.tiles[x][y])
 			res = res + "\n"
