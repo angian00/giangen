@@ -1,13 +1,11 @@
 
 ## MILESTONES
 
-### v0.4
+### v0.x
 - algorithms:
 	- cellular automata: flood fill
 	- jamie's algorithm
 
 - experimenting with maps decorations:
-	- tile lines
-	- wall borders
 	- painting background images
 

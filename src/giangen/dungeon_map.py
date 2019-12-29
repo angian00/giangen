@@ -61,8 +61,9 @@ class DungeonMap:
 		return res
 
 	def export(self, img_path):
-		self.export_1(img_path)
+		#self.export_1(img_path)
 		#self.export_2(img_path)
+		self.export_3(img_path)
 
 
 	def export_1(self, img_path):
@@ -123,5 +124,47 @@ class DungeonMap:
 						((x+1)*tile_size-1, (y+1)*tile_size-1) ),
 						fill=colors[self.tiles[x][y]])
 
+		img.save(img_path)
+
+
+	def export_3(self, img_path):
+		img = Image.new('RGB', (self.w*tile_size, self.h*tile_size), color = "#c0c0c0")
+		draw = ImageDraw.Draw(img)
+
+		for x in range(self.w):
+			for y in range(self.h):
+				if not self.tiles[x][y] == TileType.WALL:
+					draw.rectangle((
+						(x*tile_size, y*tile_size), 
+						((x+1)*tile_size-1, (y+1)*tile_size-1) ),
+						fill='white')
+
+					for dir in [ (-1, 0), (1, 0), (0, -1), (0, 1) ]:
+					#for dir in [ (0, 1) ]:
+						nx = x + dir[0]
+						ny = y + dir[1]
+
+						if (nx < 0) or (nx >= self.w) or (ny < 0) or (ny >= self.h) or (self.tiles[nx][ny] == TileType.WALL):
+							line_color = 'black'
+							line_width = int(tile_size / 10)
+						else:
+							line_color = 'grey'
+							line_width = 1
+
+						if x == nx:
+							x1 = x
+							x2 = x + 1
+							y1 = max(y, ny)
+							y2 = y1
+						else:
+							x1 = max(x, nx)
+							x2 = x1
+							y1 = y
+							y2 = y + 1
+
+						draw.line((
+							(x1 * tile_size, y1 * tile_size), 
+							(x2 * tile_size, y2 * tile_size) ),
+							fill=line_color, width=line_width)
 
 		img.save(img_path)
