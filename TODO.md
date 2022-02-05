@@ -9,3 +9,5 @@
 - experimenting with maps decorations:
 	- painting background images
 
+- dungeon content generation
+
